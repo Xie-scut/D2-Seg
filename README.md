@@ -2,7 +2,9 @@
 
 Three paired ultrasound examinations from the 76-case test split. Each row shows B-mode ultrasound (BUS), shear-wave velocity (SWV), shear-wave time (SWT), and the final segmentation on BUS (green contour). Display panels are cropped and resized; Dice is evaluated on the original BUS grid.
 
-Predictions come from the 100-epoch, constant-learning-rate three-branch U-Net++ model (student seed 124) with nine-candidate MedGemma review. Examples were selected near the 25th, 50th and 75th percentiles of case-level Dice to show a range of outcomes. Mean Dice across all 76 cases was 70.54%.
+**Test performance:** D2-Seg achieved a mean Dice of **72.10%** and a mean IoU of **58.11%** on the 76-case test split using the U-Net student (seed 128) and MedGemma-27B-it review.
+
+The examples below come from a separate run with a three-branch U-Net++ student (seed 124) and nine-candidate MedGemma review. They were selected near the 25th, 50th and 75th percentiles of case-level Dice for that run.
 
 ### Example 1 — Dice 63.17%
 
